@@ -1,4 +1,5 @@
-# Python 3
+# The Python Standard Library (Python 3)
+# https://docs.python.org/3/library/index.html
 
 # Single line comments.
 
@@ -63,16 +64,27 @@ pow(x, y) # x to the power y
 x ** y	# x to the power y
 
 """
-Notes:
+    Notes:
+
     (1) Also referred to as integer division. The resultant value is a
-    whole integer, though the result’s type is not necessarily int. The result is
-    always rounded towards minus infinity: 1//2 is 0, (-1)//2 is -1, 1//(-2) is -1,
-    and (-1)//(-2) is 0.
+        whole integer, though the result’s type is not necessarily int.
+        The result is always rounded towards minus infinity: 1//2 is 0,
+        (-1)//2 is -1, 1//(-2) is -1, and (-1)//(-2) is 0.
 
-    (2) Not for complex numbers. Instead convert to floats using abs() if appropriate.
+    (2) Not for complex numbers. Instead convert to floats using
+        abs() if appropriate.
 
-    (3)
+    (3) Conversion from floating point to integer may round or truncate
+        as in C; see functions math.floor() and math.ceil() for well-defined
+        conversions.
+
+    (4) float also accepts the strings “nan” and “inf” with an optional
+        prefix “+” or “-” for Not a Number (NaN) and positive or
+        negative infinity.
 
     (5) Python defines pow(0, 0) and 0 ** 0 to be 1
+
+    (6) The numeric literals accepted include the digits 0 to 9 or
+        any Unicode equivalent (code points with the Nd property).
 
 """

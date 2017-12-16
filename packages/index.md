@@ -13,7 +13,9 @@ Always use the Command Prompt and not PowerShell!
 ## Virtual environments
 I guess they work like Node.js packages. Rather than global pip packages for
 Python, you can install packages in a local virtualenv/virtualenvwrapper
-environment.
+environment. Global generally means that you can access commands from
+any folder on the terminal. Local means that packages are installed in a
+particular folder. For Python this is something different compared to node.
 
 ## Install virtualenv and virtualenvwrapper
 [virtualenv](https://virtualenv.pypa.io/en/stable/installation/)
@@ -47,7 +49,6 @@ In the cmd prompt you will see your environment name in brackets/parentheses.
 In the cmd prompt the environment name in brackets/parentheses will disappear.
 
 ## Listing installed pip packages from the internet.
-
 `pip freeze` will output a list of installed packages and their versions.
 It also allows you to write those packages to a file that can later be used
 to set up a new environment.
