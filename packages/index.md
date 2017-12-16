@@ -15,7 +15,10 @@ I guess they work like Node.js packages. Rather than global pip packages for
 Python, you can install packages in a local virtualenv/virtualenvwrapper
 environment. Global generally means that you can access commands from
 any folder on the terminal. Local means that packages are installed in a
-particular folder. For Python this is something different compared to node.
+particular folder. For Python would be the environment folder.
+Global for Python means that it runs from the `C:\Python` folders. Local for
+Python means that it runs from the local environment after running
+`activate` script (see below).
 
 ## Install virtualenv and virtualenvwrapper
 [virtualenv](https://virtualenv.pypa.io/en/stable/installation/)
@@ -27,13 +30,13 @@ particular folder. For Python this is something different compared to node.
 `pip install virtualenvwrapper-win`
 Again- always use the Command Prompt and not PowerShell!
 
-## Set up an environment container folder
+## Set up an environment container folder (Envs)
 1. Run: `workon`
 2. A list of environments, empty, is printed.
-3. Run: `mkvirtualenv foldername`
-4. A new environment, temp is created and activated.
+3. Run: `mkvirtualenv env`
+4. A new environment, `env` is created and activated.
 5. Run: `workon`
-6. This time, the temp environment is included.
+6. This time, the `env` environment is included.
 
 By default windows will make a folder in `C:\Users\User Name\Envs`
 or you should make this the default folder for storing environments.

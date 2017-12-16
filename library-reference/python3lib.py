@@ -35,33 +35,34 @@ not x	# if x is false, then True, else False
 
 ## Comparisons
 
-<	# strictly less than
-<=	# less than or equal
->	# strictly greater than
->=	# greater than or equal
-==	# equal
-!=	# not equal
-is	# object identity
-is not # negated object identity
+<	    # strictly less than
+<=	    # less than or equal
+>	    # strictly greater than
+>=	    # greater than or equal
+==	    # equal
+!=	    # not equal
+is	    # object identity
+is not  # negated object identity
 
 ## Numeric Types — int, float, complex
 
-x + y	# sum of x and y
-x - y	# difference of x and y
-x * y	# product of x and y
-x / y	# quotient of x and y
-x // y	# floored quotient of x and y. See (1)
-x % y	# remainder of x / y. See (2)
--x	# x negated
-+x	# x unchanged
-abs(x)	# absolute value or magnitude of x
-int(x)	# x converted to integer
-float(x) # x converted to floating point
-complex(re, im)	# complex number with real part re, imaginary part im. im defaults to zero.
-c.conjugate() # conjugate of the complex number c.
-divmod(x, y) # the pair (x // y, x % y)
-pow(x, y) # x to the power y
-x ** y	# x to the power y
+x + y	            # sum of x and y
+x - y	            # difference of x and y
+x * y	            # product of x and y
+x / y	            # quotient of x and y
+x // y	            # floored quotient of x and y. See (1)
+x % y	            # remainder of x / y. See (2)
+-x	                # x negated
++x	                # x unchanged
+abs(x)	            # absolute value or magnitude of x
+int(x)	            # x converted to integer (3)(6)
+float(x)            # x converted to floating point (4)(6)
+complex(re, im)	    """ complex number with real part `re`, imaginary
+                     part `im`. `im` defaults to zero. (6) """
+c.conjugate()       # conjugate of the complex number c.
+divmod(x, y)        # the pair (x // y, x % y) (2)
+pow(x, y)           # x to the power y (5)
+x ** y	            # x to the power y (5)
 
 """
     Notes:
